@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFF5F9;
+  color: #728C98;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em; 
+}
+
+.card {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3D(-50%,-50%,0);
+  width: 400px;
+  background-color: #F7FBFD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 1rem 1rem 3rem #62819291;
+}
+
+.card .card-img {
+  width: 20em;
+  min-height: 20em;
+  max-height: 20em;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #EFF5F9;
+  box-shadow: 1px 1px 7px #62819291;
+}
+
+.card div {
+  margin: 1.3em 0;
+}
+
+.song-name {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-bottom: .5em;
+  text-transform: capitalize;
+}
+
+#slider {
+  width: 100%;
+  background-color: transparent;
+  height: 2em;
+  cursor: pointer;
+}
+
+#slider:focus {
+  outline: none;
+}
+
+#slider::-webkit-slider-thumb,
+#slider::-moz-range-thumb {
+  cursor: pointer;
+  border: 1px solid #728C98;
+  outline: 1px solid #728C98;
+  outline-offset: 0.125rem;   
+  border-radius: 50%;
+  background: linear-gradient(145deg, #7a96a3, #677e89);
+  box-shadow:  20px 20px 60px #617781,
+              -20px -20px 60px #83a1af;
+}
+
+#slider::-moz-range-track {
+  background-color: #EFF5F9;
+  box-shadow:  inset 1px 1px 4px #728c986b;
+  border-radius: 0.5rem;
+  height: .7rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-size: 1em;
+  width: 3.5em;
+  height: 3.5em;
+  margin: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #fffbfb, #e8e9ea);
+  box-shadow:  20px 20px 60px #c3c5c6,
+              -20px -20px 60px #f7f7f7;
+}
+
+button:nth-child(2) {
+  width: 4em;
+  height: 4em;
+  font-size: 1.4em;
+}
+
+button:hover {
+  background: #F7FBFD;
+  box-shadow:  20px 20px 60px #d2d5d7,
+              -20px -20px 60px #ffffff;
+}
+
+button:focus {
+  background: linear-gradient(145deg, #dee2e4, #ffffff);
+  box-shadow:  20px 20px 60px #d2d5d7,
+              -20px -20px 60px #ffffff;
+}
+
+@keyframes rotateAnime {
+	100% {
+    transform: rotate(720deg);
+	}
+}

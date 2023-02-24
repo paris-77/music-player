@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Card</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+</head>
+<body>
+  <div class="card">
+    <img src="" alt="song cover" class="card-img">
+    <div class="info">
+      <h2 class="song-name"></h2>
+      <p class="singer-name"></p>
+    </div>
+    <input type="range" name="range" id="slider" value="0" min="0" max="220" step="1">
+    <div class="controls">
+      <button id="prev">
+        <i class="fa fa-step-backward" aria-hidden="true"></i>
+      </button>
+      <button id="playPause" class="pause">
+        <i class="fa fa-play" aria-hidden="true"></i>
+        <!-- <i class="fa fa-pause" aria-hidden="true"></i> -->
+      </button>
+      <button id="next">
+        <i class="fa fa-step-forward" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</body>
+</html>
